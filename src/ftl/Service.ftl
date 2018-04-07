@@ -17,5 +17,5 @@ public interface ${className}Service {
 
     void update(${className} model);
 
-    void deleteById(String id);
+    void deleteByIds(String[] id);
 }

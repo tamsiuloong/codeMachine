@@ -34,8 +34,11 @@ public class ${className}ServiceImpl implements ${className}Service {
     }
 
     @Override
-    public void deleteById(String id) {
-        ${className?uncap_first}Dao.deleteById(${className}.class,id);
+    public void deleteByIds(String[] id) {
+        for (String id:ids) {
+            ${className?uncap_first}Dao.deleteById(${className}.class,id);
+        }
+
     }
 
     @Override

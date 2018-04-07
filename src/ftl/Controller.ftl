@@ -15,12 +15,12 @@ import java.util.List;
 public class ${className}Ctrl {
 
     @Autowired
-    private ${className}Service deptService;
+    private ${className}Service ${className?uncap_first}Service;
 
     @GetMapping
     public Pagination list(Pagination page)
     {
-        Pagination result = deptService.findByPage(page);
+        Pagination result = ${className?uncap_first}Service.findByPage(page);
         return result;
     }
 
@@ -28,29 +28,29 @@ public class ${className}Ctrl {
     @GetMapping("getAll")
     public List<${className}> getAll(Pagination page)
     {
-        List<${className}> deptList = deptService.findAll();
-        return deptList;
+        List<${className}> ${className?uncap_first}List = ${className?uncap_first}Service.findAll();
+        return ${className?uncap_first}List;
     }
 
     @DeleteMapping
     public String delete(@RequestBody String[] ids)
     {
-        deptService.deleteByIds(ids);
+        ${className?uncap_first}Service.deleteByIds(ids);
         return "1";
     }
 
 
     @PutMapping
-    public String update(@RequestBody ${className} dept)
+    public String update(@RequestBody ${className} ${className?uncap_first})
     {
-        deptService.update(dept);
+        ${className?uncap_first}Service.update(${className?uncap_first});
         return "1";
     }
 
     @PostMapping
-    public ${className} add(@RequestBody ${className} dept)
+    public ${className} add(@RequestBody ${className} ${className?uncap_first})
     {
-        deptService.save(dept);
-        return dept;
+        ${className?uncap_first}Service.save(${className?uncap_first});
+        return ${className?uncap_first};
     }
 }

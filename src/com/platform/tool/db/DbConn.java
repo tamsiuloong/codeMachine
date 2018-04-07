@@ -12,14 +12,14 @@ public class DbConn {
 	/*private Connection conn= null;
 	private String driver = "com.mysql.jdbc.Driver";
 	//定义连接数据库的url资源
-	private String url = "jdbc:mysql://localhost:3306/jk2601?characterEncoding=utf8";
+	private String url = "jdbc:mysql://120.79.215.150:3306/ez?characterEncoding=utf8";
 	//定义连接数据库的用户名和密码
 	private String userName = "root";
 	private String passWord = "root";*/
 	private Connection conn= null;
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	//定义连接数据库的url资源
-	private String url = "jdbc:oracle:thin:@192.168.1.157:1521:orcl";
+	private String url = "jdbc:oracle:thin:@192.168.1.5:1521:orcl";
 	//定义连接数据库的用户名和密码
 	private String userName = "jk";
 	private String passWord = "jk";

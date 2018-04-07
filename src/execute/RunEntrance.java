@@ -9,13 +9,13 @@ import com.platform.main.CodeMeachine;
 public class RunEntrance {
 	
 	public static void main(String[] args) throws SQLException {
-		String tableName = "ROLE_P";
+		String tableName = "NOTE";
 		
 		
 		CodeMeachine.setGeneratePath("/users/macbook/workspace/code/");
 		CodeMeachine.setPackageName("com.yaorange.jk");
-		CodeMeachine.setRootPath("system");
-		CodeMeachine.setEntityRemark("角色");
+		CodeMeachine.setRootPath("student");
+		CodeMeachine.setEntityRemark("笔记");
 
 		List<String> exclusiveFiled =new ArrayList<>();
 		//排除字段
